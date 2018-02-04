@@ -11,7 +11,7 @@ class GameOverScene(Scene):
         super(GameOverScene, self).__init__(game)
 
         self.__playerName = ""
-        self.__highscoreSprite = pygame.image.load(GameConstants.SPRITE_HIGHSCORE)
+        self.__highscoreSprite = pygame.image.load(GameConstants.SPRITE_HIGHSCORE).convert()
 
     def render(self):
         self.getGame().screen.blit(self.__highscoreSprite, (50, 50))

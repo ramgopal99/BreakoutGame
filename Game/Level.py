@@ -52,16 +52,16 @@ class Level:
                     amountOfSuperPowerBricks >= 2
 
                 if brickType == 1 or hasSuperPowerBrickNumberOverflown:
-                    brick = Brick([x, y], pygame.image.load(GameConstants.SPRITE_BRICK), self.__game)
+                    brick = Brick([x, y], pygame.image.load(GameConstants.SPRITE_BRICK).convert(), self.__game)
                     self.__bricks.append(brick)
                     self.__amountOfBricksLeft += 1
                 elif brickType == 2:
-                    brick = SpeedBrick([x, y], pygame.image.load(GameConstants.SPRITE_SPEEDBRICK), self.__game)
+                    brick = SpeedBrick([x, y], pygame.image.load(GameConstants.SPRITE_SPEEDBRICK).convert(), self.__game)
                     self.__bricks.append(brick)
                     self.__amountOfBricksLeft += 1
                     amountOfSuperPowerBricks += 1
                 elif brickType == 3:
-                    brick = LifeBrick([x, y], pygame.image.load(GameConstants.SPRITE_LIFEBRICK), self.__game)
+                    brick = LifeBrick([x, y], pygame.image.load(GameConstants.SPRITE_LIFEBRICK).convert(), self.__game)
                     self.__bricks.append(brick)
                     self.__amountOfBricksLeft += 1
                     amountOfSuperPowerBricks += 1
