@@ -1,0 +1,7 @@
+.idea/
+Game/Assets/
+*.pyc
+Game/__pycache__/
+Game/Shared/__pycache__/
+Game/Scenes/__pycache__/
+Game/Bricks/__pycache__/
